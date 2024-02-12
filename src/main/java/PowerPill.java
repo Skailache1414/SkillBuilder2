@@ -9,7 +9,7 @@
  */
 public class PowerPill
 {
-    public static int DEFAULT_POWER = 10
+    public static final int DEFAULT_POWER = 10
 
     private int power;
     private String name;
@@ -45,10 +45,13 @@ public class PowerPill
     }
 
 
-    public String getName() { return name;}
+    public String getName() {
+        return name;}
 
     }
-    public void setName(String name) {this.name = name; }
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public String toString() {
         return ("PowerPill " + name + " = " + power);
